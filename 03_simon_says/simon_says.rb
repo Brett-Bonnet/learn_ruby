@@ -1,22 +1,20 @@
-
-
 def echo(word)
-  puts word
+  word
 end
 
 def shout(word)
-puts word.upcase
+  word.upcase
 end  
   
 def repeat(word, num=2)
   num.times do
-    puts word
+    print word + ' '
   end  
 end
 
 def start_of_word(word, num)
-  puts word.slice(0..(num-1))
-end  
+  word.slice(0..(num-1))
+end
 
 
 def first_word 
