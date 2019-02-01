@@ -23,5 +23,11 @@ def first_word(words)
 
 end
 
-def titleize 
+def titleize(words)
+  array = words.split(' ')
+  nocaps = ["and", "the", "other", "an"]
+  array.map { |word| nocaps.include?(word) && !(word == array.first) ? word : word.capitalize }.join(" ")
+
 end
+
+titleize("and the david copperfield an other show and")
