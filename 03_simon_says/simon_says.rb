@@ -1,3 +1,4 @@
+
 def echo(word)
   word
 end
@@ -7,9 +8,8 @@ def shout(word)
 end  
   
 def repeat(word, num=2)
-  num.times do
-    print word + ' '
-  end  
+ ([word] * num).join(' ')
+
 end
 
 def start_of_word(word, num)
@@ -17,7 +17,10 @@ def start_of_word(word, num)
 end
 
 
-def first_word 
+def first_word(words)
+  word_array = words.split(' ')
+  f_word = word_array[0]
+
 end
 
 def titleize 
