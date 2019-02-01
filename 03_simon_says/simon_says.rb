@@ -25,9 +25,8 @@ end
 
 def titleize(words)
   array = words.split(' ')
-  nocaps = ["and", "the", "other", "an"]
-  array.map { |word| nocaps.include?(word) && !(word == array.first) ? word : word.capitalize }.join(" ")
+  nocaps = ["and", "the", "over", "an"]
+  new_array = array.map { |word| nocaps.include?(word)? word : word.capitalize }.join(" ")
+  new_array.sub(new_array[0], new_array[0].capitalize)
 
 end
-
-titleize("and the david copperfield an other show and")
