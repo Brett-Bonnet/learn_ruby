@@ -7,13 +7,13 @@ def translate(s)
 end
 
 def for_each(word)
-vowel = word.index(/[aeiou]/)
-which_vowel = word[vowel]
-if which_vowel == 'u' then
- vowel+=1
- else 	
- vowel
- end
+  vowel = word.index(/[aeiou]/)
+  which_vowel = word[vowel]
+  if which_vowel == 'u' then
+    vowel+=1
+  else 	
+    vowel
+  end
 end
 
 
