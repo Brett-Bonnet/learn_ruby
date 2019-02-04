@@ -15,25 +15,24 @@ def sum(array)
 end
 
 def sum(array)
- total = 0
- total = array.inject(:+)
- puts total
+ 
+ array.inject(:+).to_i
+
 end
 
-def multiply(array)
+def multiply(*args) 
   
-total = array.inject(1) {|product, n| product * n} 
-puts total  
+  total = args.inject(1) {|product, n| product * n}
 
 end
 
 def power(a, b)  
  total = a ** b
- puts total
+
 end
 
 def factorial(x)
 arr = (1..x).to_a
 total = arr.inject(1) {|product, n| product * n}
-puts total
-end  
+
+end 
