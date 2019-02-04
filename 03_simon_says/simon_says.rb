@@ -28,5 +28,5 @@ def titleize(words)
   nocaps = ["and", "the", "over", "an"]
   new_array = array.map { |word| nocaps.include?(word)? word : word.capitalize }.join(" ")
   new_array.sub(new_array[0], new_array[0].capitalize)
-
 end
+
